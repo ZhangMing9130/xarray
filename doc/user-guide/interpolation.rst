@@ -150,8 +150,8 @@ The interpolation method can be specified by the optional ``method`` argument.
     )
 
     da.plot.line("o", label="original")
-    da.interp(x=np.linspace(0, 1, 100)).plot.line(label="linear (default)")
-    da.interp(x=np.linspace(0, 1, 100), method="cubic").plot.line(label="cubic")
+    da.interp(x=np.linspace(0, 2 * np.pi, 100)).plot.line(label="linear (default)")
+    da.interp(x=np.linspace(0, 2 * np.pi, 100), method="cubic").plot.line(label="cubic")
     @savefig interpolation_sample1.png width=4in
     plt.legend()
 
